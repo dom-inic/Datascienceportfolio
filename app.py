@@ -174,3 +174,16 @@ elif choose == "Projects":
     st.markdown('Build a model using libraries like pytorch, opencv, sklearn and many more to predict the type of disease a cassava plant has based on the leaf images provided farmers in Uganda')
     st.subheader('Number Plate Detector')
     st.markdown('Build a model using libraries like pytorch, opencv, sklearn and many more to predict the type of disease a cassava plant has based on the leaf images provided farmers in Uganda')
+
+elif choose == "Apps":
+    st.markdown(""" <style> .font {
+    font-size:35px ; font-family: 'Cooper Black'; color: #FF9633;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font">Web apps </p>', unsafe_allow_html=True)
+
+    st.subheader('Cassava Lead Disease classifier')
+    st.markdown('Build a model using libraries like pytorch, opencv, sklearn and many more to predict the type of disease a cassava plant has based on the leaf images provided farmers in Uganda')
+    st.subheader('Deep Fake Model')
+    st.markdown('Build a model using libraries like pytorch, opencv, sklearn and many more to predict the type of disease a cassava plant has based on the leaf images provided farmers in Uganda')
+    st.subheader('Number Plate Detector')
+    st.markdown('Build a model using libraries like pytorch, opencv, sklearn and many more to predict the type of disease a cassava plant has based on the leaf images provided farmers in Uganda')
