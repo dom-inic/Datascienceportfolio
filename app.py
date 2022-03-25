@@ -7,6 +7,7 @@ import pandas as pd
 #import streamlit.components.v1 as components
 import base64
 from streamlit_text_rating.st_text_rater import st_text_rater
+import requests
 
 with st.sidebar:
     choose = option_menu("Main Menu", ["About", "Projects", "Blog","Apps", "Contact"],
@@ -157,4 +158,6 @@ elif choose == "Contact":
         Message=st.text_input(label='Please Enter Your Message') #Collect user feedback
         submitted = st.form_submit_button('Submit')
         if submitted:
+            url = "http://127.0.0.1:8000/api/contact"
+            requests.post(url, data = [Name, Email, Message])
             st.write('Thanks for reaching out. I will respond to your questions or inquiries as soon as possible!')
