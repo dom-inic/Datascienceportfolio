@@ -161,3 +161,16 @@ elif choose == "Contact":
             url = "http://127.0.0.1:8000/api/contact"
             requests.post(url, data = [Name, Email, Message])
             st.write('Thanks for reaching out. I will respond to your questions or inquiries as soon as possible!')
+
+elif choose == "Projects":
+    st.markdown(""" <style> .font {
+    font-size:35px ; font-family: 'Cooper Black'; color: #FF9633;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font">Projects Done</p>', unsafe_allow_html=True)
+
+    st.subheader('Cassava Lead Disease classifier')
+    st.markdown('Build a model using libraries like pytorch, opencv, sklearn and many more to predict the type of disease a cassava plant has based on the leaf images provided farmers in Uganda')
+    st.subheader('Deep Fake Model')
+    st.markdown('Build a model using libraries like pytorch, opencv, sklearn and many more to predict the type of disease a cassava plant has based on the leaf images provided farmers in Uganda')
+    st.subheader('Number Plate Detector')
+    st.markdown('Build a model using libraries like pytorch, opencv, sklearn and many more to predict the type of disease a cassava plant has based on the leaf images provided farmers in Uganda')
